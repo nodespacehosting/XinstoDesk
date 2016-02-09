@@ -71,6 +71,7 @@ function helpdeskz_getQuery($db_prefix, $admin_user, $admin_password){
 	  `name` varchar(255) NOT NULL,
 	  `subject` varchar(255) NOT NULL,
 	  `message` text NOT NULL,
+	  `html` varchar(5) NOT NULL,
 	  PRIMARY KEY (`id`)
 	) ENGINE=MyISAM DEFAULT CHARSET=latin1;";
 	$query[] = "CREATE TABLE `".$db_prefix."error_log` (

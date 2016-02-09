@@ -8,7 +8,7 @@
  */
 $LANG['HOME'] = 'Hjem';
 $LANG['MY_TICKETS'] = 'Mine Saker';
-$LANG['SUBMIT_A_TICKET'] = 'Lag ny sak';
+$LANG['SUBMIT_A_TICKET'] = 'Ny sak';
 $LANG['KNOWLEDGEBASE'] = 'Kunnskapsbase';
 $LANG['NEWS'] = 'Nyheter';
 $LANG['ACCOUNT_LOGIN'] = 'Konto Innlogging';
