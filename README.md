@@ -1,10 +1,15 @@
 ![](/images/logo.png)
 
-Version: 1.0.2 from 1st June 2015<br>
-Developed by: Evolution Script S.A.C.<br>
+Version: 2.0 Alpha (April 2018)<br>
+Xinsto, LLC<br>
+Originally developed by Evolution Script S.A.C.<br>
 [Help Desk Software HelpDeskZ](http://www.helpdeskz.com)
 
 HelpDeskZ is a free PHP based software which allows you to manage your site's support with a web-based support ticket system.
+
+## Bugs
+
+All bugs, features, enhancements, support, etc. should be reported through the Xinsto Bug Tracker under the HelpDeskZ project (https://bugs.xinsto.com/set_project.php?project_id=7).
 
 ## Requirements
 
