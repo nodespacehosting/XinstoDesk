@@ -60,21 +60,21 @@ function validateEmail($email) {
 		return true;
 	}
 }
-function encrypt($string){
-	$salt = 'WEujixru894SD41';
-	$key = md5($salt);
-	$iv = md5(md5($key));
-	$output = mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $string, MCRYPT_MODE_CBC, $iv);
-	$output = base64_encode($output);
-	return $output;
+function encrypt($string) {
+    $salt = 'WEujixru894SD41';
+    $key = md5($salt);
+    $iv = md5(md5($key));
+    $output = openssl_encrypt($string, 'AES-256-CBC', md5($key), 0, $iv);
+    $output = base64_encode($output);
+    return $output;
 }
-function decrypt($string){
-	$salt = 'WEujixru894SD41';
-	$key = md5($salt);
-	$iv = md5(md5($key));
-	$output = mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($string), MCRYPT_MODE_CBC, $iv);
-	$output = rtrim($output, "");
-	return $output;
+function decrypt($string) {
+    $salt = 'WEujixru894SD41';
+    $key = md5($salt);
+    $iv = md5(md5($key));
+    $output = openssl_decrypt(base64_decode($string), 'AES-256-CBC', md5($key), 0, $iv);
+    $output = rtrim($output, "");
+    return $output;
 }
 
 function removeAttachment($id,$type=null){

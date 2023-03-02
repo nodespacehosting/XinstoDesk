@@ -6,7 +6,15 @@
  * @author Evolution Script S.A.C.
  * @since 1.0.0
  */
-require_once INCLUDES.'PHPMailer/PHPMailerAutoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
+require_once INCLUDES.'PHPMailer/src/PHPMailer.php';
+require_once INCLUDES.'PHPMailer/src/SMTP.php';
+require_once INCLUDES.'PHPMailer/src/Exception.php';
+
 class Mailer
 {
 	function Mailer($data_mail){
