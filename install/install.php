@@ -514,8 +514,8 @@ function helpdeskz_completed(){
 	helpdeskz_footer();	
 }
 if($input->p['license'] == 'agree'){
-	if($input->sanitize(['settings']) == 'install'){
-		if($input->sanitize(['sql_type']) == 'mysqli'){
+	if($input->p['settings'] == 'install'){
+		if($input->p['sql_type'] == 'mysqli'){
 			$db = new MySQLIDB;
 		}else{
 			$db = new MySQLDB;
